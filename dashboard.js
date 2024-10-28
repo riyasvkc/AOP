@@ -104,7 +104,7 @@ function loadSheetData(type) {
     let selectedSheet;
     let tableHeadId, tableBodyId;
     let selectedSpreadsheetId;
-    const scriptUrl = 'https://script.google.com/macros/s/AKfycbwpKsC8Y9jKofYftX3TfpIwxWFyeDMAOj7LXo4h17Jqhcok-fm0oTgfhR2gMd7GInv4Xg/exec';
+    const scriptUrl = 'https://script.google.com/macros/s/AKfycbzZgnBLckuHvGNIxdar1LZyzDtGkZryuZR5pmvKpfbewqGyXjsW1QFk-EYV3wzgDTvwWw/exec';
 
     switch (type) {
         case 'attendance':
