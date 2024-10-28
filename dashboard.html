@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Dashboard</h1>
+    <div class="button-container">
+        <button onclick="showAttendance()">ATTENDANCE</button>
+        <button onclick="showPiecerate()">PIECERATE</button>
+        <button onclick="showWorkingIncentive()">WORK-INCENTIVE</button>
+    </div>
+
+    <!-- Container for Attendance Data -->
+    <div id="attendance-container" style="display:none;">
+        <h2>Attendance Data</h2>
+        <label for="attendance-sheet-select">Select Month:</label>
+        <select id="attendance-sheet-select" onchange="loadSheetData('attendance')">
+            <option value=" ">Select</option>
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+        </select>
+        <table id="attendance-data-table" border="1">
+            <thead id="attendance-table-head"></thead>
+            <tbody id="attendance-table-body"></tbody>
+        </table>
+    </div>
+
+    <!-- Container for Piecerate Data -->
+    <div id="piecerate-container" style="display:none;">
+        <h2>Piecerate Data</h2>
+        <label for="piecerate-sheet-select">Select Month:</label>
+        <select id="piecerate-sheet-select" onchange="loadSheetData('piecerate')">
+            <option value=" ">Select</option>
+            <option value="Jan">January</option>
+            <option value="Feb">February</option>
+            <option value="Mar">March</option>
+            <option value="Apr">April</option>
+            <option value="May">May</option>
+            <option value="Jun">June</option>
+            <option value="Jul">July</option>
+            <option value="Aug">August</option>
+            <option value="Sep">September</option>
+            <option value="Oct">October</option>
+            <option value="Nov">November</option>
+            <option value="Dec">December</option>
+        </select>
+        <label for="worker-combo-select">Machine:</label>
+        <select id="worker-combo-select" onchange="loadSheetData('piecerate')">
+            <option value=" ">Select</option>
+            <option value="Gusbi">Gusbi</option>
+            <option value="Gusberti">Gusberti</option>
+            <option value="Asadi">Asadi</option>
+        </select>
+        <table id="piecerate-data-table" border="1">
+            <thead id="piecerate-table-head"></thead>
+            <tbody id="piecerate-table-body"></tbody>
+        </table>
+    </div>
+
+    <!-- Container for Working Incentive Data -->
+    <div id="working-incentive-container" style="display:none;">
+        <h2>Incentive Data</h2>
+        <label for="working-incentive-sheet-select">Select Month:</label>
+        <select id="working-incentive-sheet-select" onchange="loadSheetData('workingIncentive')">
+            <option value=" ">Select</option>
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+        </select>
+        <table id="working-incentive-data-table" border="1">
+            <thead id="working-incentive-table-head"></thead>
+            <tbody id="working-incentive-table-body"></tbody>
+        </table>
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>

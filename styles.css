@@ -1,0 +1,145 @@
+/* General Body Style */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #fffcf7, #d4e6f1);
+}
+
+/* Title Style */
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Label, Select, Input, and Button Style */
+label, select, input, button {
+    margin: 10px 0;
+}
+
+select, input, button {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+select:focus, input:focus, button:focus {
+    border-color: #1f7a8c;
+    outline: none;
+}
+
+/* Button Styles */
+button {
+    color: white;
+    background-color: #1f7a8c; /* Default color */
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #145b6c;
+}
+
+button:active {
+    background-color: #0d4a5b;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.button-container button {
+    width: 200px;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/* Colorful Buttons */
+.button-attendance {
+    background-color: #ff6768; /* Red for Attendance */
+}
+
+.button-piecerate {
+    background-color: #ffa500; /* Orange for Piecerate */
+}
+
+.button-working-incentive {
+    background-color: #32a852; /* Green for Working Incentive */
+}
+
+/* Table Style */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    overflow-x: auto;
+    display: block;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #1f7a8c;
+    color: white;
+    text-transform: uppercase;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+tr:hover td {
+    background-color: #eaf4f8;
+}
+
+/* Container Styles */
+.login-container, .data-container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media (min-width: 600px) {
+    select, input, button {
+        width: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .button-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .button-container button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
