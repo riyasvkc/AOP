@@ -20,7 +20,7 @@ function fetchDataFromGoogleSheets(sheetName) {
 }
 
 function login() {
-    const workerId = document.getElementById('login-worker-id').value.trim();
+    const workerId = "VKCWP" + document.getElementById('login-worker-id').value.trim();
     const name = document.getElementById('login-name').value.trim();
 
     fetchDataFromGoogleSheets('Employee').then(data => {
